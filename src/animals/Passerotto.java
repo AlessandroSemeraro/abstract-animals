@@ -1,6 +1,6 @@
 package animals;
 
-public class Passerotto extends Animale {
+public class Passerotto extends Animale implements Volare {
 
     @Override
     public void verso() {
@@ -10,5 +10,9 @@ public class Passerotto extends Animale {
     @Override
     public void mangia() {
         System.out.println("semi");
+    }
+
+    public void faiVolare(){
+        System.out.println("Sto volando!!!");
     }
 }
